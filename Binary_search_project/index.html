@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "./img/icon.png" type = "image">
+
+    <title>Binary search game</title>
+</head>
+<body>
+
+    <div id = "theBiggestDiv">
+
+        <div id = "firstHeader">Welcome to the Binary search game!</div>
+
+        <ul>
+            Rules:
+            <li>Below you enter the range of numbers in which the game will go on;</li>
+            <li>Also you choose a game mode: whether you want to guess a number or do you want the computer to guess yours. A number must be within the range.</li>
+        </ul>
+    
+        <div>
+            <label for = "firstNumber">Please, enter the first integer positive number</label>
+            <input type = "number" placeholder = "0" id = "firstNumber">
+        </div>
+
+        <div id = "firstNumOutput" class = "output"></div>
+
+        <div>
+            <label for = "lastNumber">Please, enter the last integer positive number</label>
+            <input type = "number" placeholder = "100" id = "lastNumber">
+        </div>
+
+        <div id = "lastNumOutput" class = "output"></div>
+
+        <div id = "chooseDiv" class = "center">Now please choose a playing mode</div>
+
+        <div id = "btnsDiv" class = "center">
+            <button id = "UserGuesses" class = "modeBtn">I will guess the computer's number</button>
+            <button id = "CompGuesses" class = "modeBtn">The computer will guess my number</button>
+        </div>
+    
+        <div id = "UserGuessesMode" class = "mode">
+        
+            <div id = "CompTalking" class = "center"></div>
+            <div id = "numberOfTrials"></div>
+        
+            <label for = "UserTries">Which number do you think it is?</label>
+            <input type = "number" id = "UserTries">
+            <button id = "checkNum" class = "btn">Check</button>
+
+            <div id = "Congrats" class = "result"></div>
+        
+        </div>
+    
+        <div id = "CompGuessesMode" class = "mode">
+
+        <div class = "center">Have you thought of a number in the range?</div>
+        <div id = "compTries"></div>
+
+        <div class = "center">
+            <button id = "more" class = "btn">My number is bigger</button>
+            <button id = "less" class = "btn">My number is less</button>
+            <button id = "equal" class = "btn">Wow! It's my number!</button>
+        </div>
+
+        <div id = "congratComp" class = "result"></div>
+
+        </div>
+
+         <button id = "reset" class = "btn">Start a new game</button>
+        
+
+    </div>
+
+    <script src = "./script.js"></script>
+
+</body>
+</html>
